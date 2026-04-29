@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 
 function PageNotFound() {
@@ -7,7 +7,7 @@ function PageNotFound() {
       <div className="text-center">
         <h1 className="text-6xl font-bold text-slate-300 mb-4">404</h1>
         <p className="text-slate-600 mb-6">Page not found.</p>
-        <a href="/united-spirits.com/" className="px-4 py-2 rounded-lg bg-slate-900 text-white">
+        <a href="#/" className="px-4 py-2 rounded-lg bg-slate-900 text-white">
           Go Home
         </a>
       </div>
@@ -17,11 +17,11 @@ function PageNotFound() {
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }

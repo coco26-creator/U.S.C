@@ -1,8 +1,8 @@
 # United Spirits Co. website
 
-React + Vite website for USC landing pages.
+Standalone React + Vite site ready for GitHub Pages.
 
-## Development
+## Local development
 
 ```bash
 npm install
@@ -15,4 +15,12 @@ npm run dev
 npm run build
 ```
 
-For GitHub Pages project deployment, keep `VITE_BASE_PATH=/united-spirits.com/` (default in `vite.config.js`).
+## GitHub Pages deployment
+
+This repo includes `.github/workflows/deploy.yml` for automatic deployment to GitHub Pages.
+
+1. Push to `main`.
+2. In GitHub repo settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+3. The workflow will build `dist/` and publish it.
+
+Routing uses `HashRouter` so deep links work on GitHub Pages without server rewrites.
