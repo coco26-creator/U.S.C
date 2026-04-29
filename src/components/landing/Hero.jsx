@@ -16,10 +16,10 @@ export default function Hero() {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        poster="united-spirits-site/assets/img/hg.png"
+        poster="https://www.unitedspiritshk.com/united-spirits-site/assets/img/hg.png"
       >
-        <source src="united-spirits-site/assets/video/hero.mp4" type="video/mp4" />
-        <source src="united-spirits-site/assets/video/hero.webm" type="video/webm" />
+        <source src="https://www.unitedspiritshk.com/united-spirits-site/assets/img/U.S.C.mp4" type="video/mp4" />
+        
       </video>
 
       {/* Dark overlay */}

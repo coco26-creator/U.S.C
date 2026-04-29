@@ -33,6 +33,20 @@ export default function About() {
               Based in the <strong>Qingdao Free Trade Zone</strong>, we oversee production, blending,
               bottling, export logistics, and brand development with precision and care.
             </p>
+            <div className="grid grid-cols-3 gap-4 mt-8">
+              <div>
+                <p className="font-heading text-2xl font-bold text-foreground mb-1">50+</p>
+                <p className="font-body text-xs uppercase tracking-[0.15em] text-muted-foreground">Partner Labels</p>
+              </div>
+              <div>
+                <p className="font-heading text-2xl font-bold text-foreground mb-1">12</p>
+                <p className="font-body text-xs uppercase tracking-[0.15em] text-muted-foreground">Origins</p>
+              </div>
+              <div>
+                <p className="font-heading text-2xl font-bold text-foreground mb-1">6</p>
+                <p className="font-body text-xs uppercase tracking-[0.15em] text-muted-foreground">Active Markets</p>
+              </div>
+            </div>
           </motion.div>
 
           {/* Video */}

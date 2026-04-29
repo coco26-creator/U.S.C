@@ -3,9 +3,9 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
+  { label: "For Producers", href: "#producers" },
   { label: "Collections", href: "#collections" },
-  { label: "Featured", href: "#featured" },
-  { label: "News", href: "#footer" },
+  { label: "Case Studies", href: "#case-studies" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -41,27 +41,12 @@ export default function Header() {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2.5"
           >
-            {/* Hexagonal flame icon */}
-            <div className="w-9 h-9 flex-shrink-0">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                <polygon
-                  points="20,2 36,11 36,29 20,38 4,29 4,11"
-                  fill="url(#hexGrad)"
-                />
-                <defs>
-                  <linearGradient id="hexGrad" x1="4" y1="2" x2="36" y2="38" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" stopColor="#ec4899" />
-                    <stop offset="100%" stopColor="#a855f7" />
-                  </linearGradient>
-                </defs>
-                {/* Flame shape inside */}
-                <path
-                  d="M20 10 C20 10 25 16 24 21 C27 18 27 14 25 11 C28 14 29 19 27 23 C29 21 30 25 27 28 C25 31 22 32 20 32 C18 32 15 31 13 28 C10 25 11 21 13 23 C11 19 12 14 15 11 C13 14 13 18 16 21 C15 16 20 10 20 10Z"
-                  fill="white"
-                  opacity="0.9"
-                />
-              </svg>
-            </div>
+            {/* Real USC logo */}
+            <img
+              src="https://www.unitedspiritshk.com/united-spirits-site/assets/img/hang.png"
+              alt="USC Logo"
+              className="w-9 h-9 rounded-full object-contain flex-shrink-0"
+            />
             <span className="font-heading text-xl font-bold tracking-wider text-white">
               U.S.C
             </span>
