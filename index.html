@@ -2,13 +2,105 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Base44 APP</title>
+    <title>United Spirits Co.</title>
+    <meta name="description" content="United Spirits Co. — Your Winery. Asia's Shelves." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{--bg:#0f1117;--gold:#c9a84c;--text:#e8e8ef;--muted:#a7a7ba;--card:#171a22;--line:rgba(255,255,255,.1)}
+      *{box-sizing:border-box} body{margin:0;font-family:Inter,sans-serif;background:#fff;color:#111}
+      .container{max-width:1150px;margin:0 auto;padding:0 24px}
+      header{position:fixed;inset:0 0 auto 0;height:76px;z-index:20;background:rgba(15,17,23,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+      .nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+      .links a{color:#fff;text-decoration:none;margin-left:24px;font-size:14px;opacity:.8}.links a:hover{opacity:1}
+      .hero{background:var(--bg);color:#fff;min-height:100vh;display:grid;place-items:center;position:relative;overflow:hidden}
+      .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+      .hero:before{content:"";position:absolute;inset:0;background:rgba(15,17,23,.55)}
+      .hero-inner{position:relative;padding-top:100px}
+      h1{font-family:"Playfair Display",serif;font-size:64px;line-height:1.05;margin:0 0 16px}.grad{background:linear-gradient(90deg,#ec4899,#a855f7);-webkit-background-clip:text;color:transparent}
+      .kicker{letter-spacing:.3em;font-size:12px;color:#ddd;text-transform:uppercase}
+      .btn{display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;margin-right:10px}
+      .btn.primary{background:linear-gradient(90deg,#ec4899,#a855f7);color:#fff}.btn.secondary{border:1px solid #fff;color:#fff}
+      section{padding:90px 0}.dark{background:var(--bg);color:var(--text)} h2{font:700 44px "Playfair Display",serif;margin:0 0 12px}
+      p{line-height:1.75;color:#555} .dark p{color:var(--muted)}
+      .grid{display:grid;gap:22px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+      .card{background:#fff;border:1px solid #e6e6ee;border-radius:14px;padding:22px}.dark .card{background:var(--card);border-color:var(--line)}
+      .stats strong{display:block;font-size:30px}.social a{display:inline-block;margin:0 8px 8px 0;padding:8px 14px;border:1px solid #ddd;border-radius:999px;color:#333;text-decoration:none;font-size:13px}
+      footer{padding:28px 0;background:#0d0f14;color:#bbb;border-top:1px solid var(--line)}
+      @media (max-width:960px){h1{font-size:44px}.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}}
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <div class="container nav">
+        <a href="#top" style="display:flex;align-items:center;gap:10px;color:white;text-decoration:none">
+          <img src="https://www.unitedspiritshk.com/united-spirits-site/assets/img/hang.png" alt="USC" style="width:36px;height:36px;border-radius:50%" />
+          <strong>U.S.C</strong>
+        </a>
+        <nav class="links">
+          <a href="#producers">For Producers</a><a href="#collections">Collections</a><a href="#case-studies">Case Studies</a><a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <video autoplay muted loop playsinline poster="https://www.unitedspiritshk.com/united-spirits-site/assets/img/hg.png">
+          <source src="https://www.unitedspiritshk.com/united-spirits-site/assets/img/U.S.C.mp4" type="video/mp4" />
+        </video>
+        <div class="container hero-inner">
+          <h1>Your Winery. <span class="grad">Asia's</span><br />Shelves.</h1>
+          <div class="kicker">From the world, for the world.</div><br />
+          <a class="btn primary" href="#collections">Explore Collection</a>
+          <a class="btn secondary" href="#contact">Get in Touch</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid grid-2" style="align-items:center">
+          <div>
+            <h2>Who We Are</h2>
+            <p>We are the supply-chain partner for premium wine and spirits brands entering Asia — managing production, bonded warehousing, compliance, and distribution across key markets.</p>
+            <div class="grid grid-3 stats">
+              <div><strong>50+</strong><small>Partner Labels</small></div>
+              <div><strong>12</strong><small>Origins</small></div>
+              <div><strong>6</strong><small>Active Markets</small></div>
+            </div>
+          </div>
+          <div class="card"><video src="https://www.unitedspiritshk.com/united-spirits-site/assets/img/facility-tours/warehouse.mp4" autoplay muted loop playsinline style="width:100%;border-radius:12px"></video></div>
+        </div>
+      </section>
+
+      <section id="producers" class="dark"><div class="container"><h2>For Producers</h2><p>Entry support, growth partnerships, and complete market expansion in one operating model.</p></div></section>
+
+      <section id="collections"><div class="container"><h2>Service Packages</h2><div class="grid grid-4">
+        <div class="card"><h3>Market Entry</h3><p>Import docs, bonded storage, customs handling.</p></div>
+        <div class="card"><h3>Growth Partner</h3><p>E-commerce support, regional marketing, quarterly reviews.</p></div>
+        <div class="card"><h3>Full-Service Expansion</h3><p>Multi-channel distribution and dedicated account management.</p></div>
+        <div class="card"><h3>BYOB</h3><p>Build your own brand with sourcing and compliance.</p></div>
+      </div></div></section>
+
+      <section id="case-studies" class="dark"><div class="container"><h2>Case Studies</h2><p>Portfolio launches, market expansions, and distribution milestones across Asia.</p></div></section>
+
+      <section id="contact"><div class="container grid grid-2"><div><h2>Ready to enter Asia? Let's talk.</h2><p>Most enquiries receive a response within 24 hours.</p>
+        <div class="social">
+          <a href="https://wa.me/85269346630" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/united_spiritshk/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://x.com/unitedspiritshk" target="_blank" rel="noreferrer">X</a>
+          <a href="https://www.facebook.com/profile.php?id=61579254602509" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.tiktok.com/@unitedspiritshk" target="_blank" rel="noreferrer">TikTok</a>
+        </div></div>
+        <form class="card" action="https://formspree.io/f/mkgqadqr" method="POST">
+          <input name="name" placeholder="Name" required style="width:100%;padding:12px;margin:0 0 10px" />
+          <input type="email" name="email" placeholder="Email" required style="width:100%;padding:12px;margin:0 0 10px" />
+          <input name="company" placeholder="Company" style="width:100%;padding:12px;margin:0 0 10px" />
+          <textarea name="message" placeholder="Message" rows="5" required style="width:100%;padding:12px;margin:0 0 10px"></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form></div></section>
+    </main>
+
+    <footer><div class="container">© 2026 United Spirits Co. All rights reserved.</div></footer>
   </body>
 </html>
