@@ -1,2 +1,1 @@
-# United Spirits Co. website
-
+# united-spirits.com

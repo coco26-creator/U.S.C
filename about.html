@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <title>About Us — United Spirits</title>
+  <meta name="description" content="Discover United Spirits — a Hong Kong-based manufacturer and distributor connecting world-class producers to Asia and Africa’s growing markets." />
+  <link rel="canonical" href="https://www.unitedspiritshk.com/about.html" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T27QXCSD');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Tailwind CSS -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></noscript>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "United Spirits",
+    "url": "https://www.unitedspiritshk.com",
+    "logo": "https://www.unitedspiritshk.com/united-spirits-site/assets/img/logo1.png",
+    "description": "Manufacturer and distributor of premium wines, whiskeys, and brandies across Asia and Africa.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 1002, 10/F, Easey Commercial Building, 253-261 Hennessy Road",
+      "addressLocality": "Wanchai",
+      "addressRegion": "Hong Kong",
+      "addressCountry": "HK"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+852 6934 6630",
+      "contactType": "customer service",
+      "areaServed": "Global",
+      "availableLanguage": "English",
+      "email": "info@unitedspiritshk.com"
+    },
+    "sameAs": [
+      "https://x.com/unitedspiritshk",
+      "https://www.facebook.com/profile.php?id=61579254602509",
+      "https://www.instagram.com/united_spiritshk/",
+      "https://www.youtube.com",
+      "https://www.tiktok.com/@unitedspiritshk"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --pink: #ec4899;
+      --purple: #a855f7;
+      --accent: linear-gradient(135deg, #ec4899, #a855f7);
+    }
+    body { font-family: 'Inter', sans-serif; background: white; color: #000; }
+    .font-serif { font-family: "Playfair Display", serif; }
+    .accent-text { background: var(--accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.1rem; border-radius: 999px; font-weight: 600; transition: all 0.2s ease; }
+    .btn-purple { background: var(--accent); color: white; }
+    .card { border-radius: 1rem; background: white; border: 1px solid #e0e0e0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px rgba(0,0,0,0.1); }
+    .section { padding: 6rem 0; }
+    .marker:hover circle { r: 8; }
+    .marker:hover text { fill: var(--pink); }
+
+    /* Map styling */
+    #global-footprint-map {
+      width: 100%;
+      height: 75vh;
+      min-height: 650px;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .leaflet-popup-content {
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+    }
+    .leaflet-popup-content-wrapper {
+      background: #ec4899;
+    }
+    .leaflet-popup-tip {
+      background: #ec4899;
+    }
+  </style>
+</head>
+
+<body class="text-black">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T27QXCSD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="united-spirits-site/assets/img/logo1.png" alt="United Spirits Logo" class="h-10 w-10 rounded-full object-contain">
+        <span class="font-serif text-xl tracking-wide">United <span class="accent-text">Spirits</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html#collections" class="hover:text-pink-600">Collections</a>
+        <a href="index.html#featured" class="hover:text-pink-600">Featured</a>
+        <a href="news.html" class="hover:text-pink-600">News</a>
+        <a href="index.html#contact" class="hover:text-pink-600">Contact</a>
+      </nav>
+      <a href="index.html" class="btn btn-purple">Back to Home</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-6 py-12">
+
+    <div class="text-center mb-16">
+      <h1 class="text-4xl sm:text-5xl font-serif mb-6"><span class="accent-text">About Us</span></h1>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        United Spirits Holding is a Hong Kong-based manufacturer and distributor connecting global producers with Asia and Africa’s fast-growing beverage markets.
+      </p>
+    </div>
+
+    <!-- WHO WE ARE & OUR MISSION -->
+    <section class="mb-20 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div class="space-y-12">
+
+        <div>
+          <h2 class="text-3xl font-serif mb-4">Who We Are</h2>
+          <p class="text-lg text-gray-700 mb-4">
+            We began as a bridge between world-class distilleries and emerging Asian markets. Today, we are proud to operate as both a <strong>manufacturer</strong> and distributor — crafting, bottling, and exporting premium wines, whiskeys, and brandies.
+          </p>
+          <p class="text-lg text-gray-700">
+            Based in the <strong>Qingdao Free Trade Zone</strong>, we oversee production, blending, bottling, export logistics, and brand development with precision and care.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-serif mb-4">Our Mission</h2>
+          <p class="text-lg text-gray-700">
+            To elevate global spirits through quality, authenticity, and collaboration — connecting exceptional producers to consumers across Asia and Africa.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Video -->
+      <div class="flex items-center justify-center">
+        <div class="relative rounded-2xl overflow-hidden shadow-lg w-full">
+          <video src="united-spirits-site/assets/img/facility-tours/warehouse.mp4"
+            class="w-full h-auto object-cover" autoplay muted loop playsinline></video>
+          <div class="absolute inset-0 rounded-2xl ring-1 ring-pink-200"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOBAL FOOTPRINT -->
+    <section class="mb-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-serif mb-4">Our Global Footprint</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">
+          Our distribution network spans Asia and Africa, ensuring reliable access to key markets worldwide.
+        </p>
+      </div>
+
+      <div id="global-footprint-map" class="rounded-xl shadow-2xl mb-12"></div>
+
+      <!-- Country Cards (correct position) -->
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="card w-40 p-4 text-center">
+          <div class="text-xl font-semibold accent-text">China</div>
+          <div class="text-xs text-gray-500 mt-1">Core Market</div>
+        </div>
+
+        <div class="card w-40 p-4 text-center">
+          <div class="text-xl font-semibold accent-text">Japan</div>
+          <div class="text-xs text-gray-500 mt-1">Premium Focus</div>
+        </div>
+
+        <div class="card w-40 p-4 text-center">
+          <div class="text-xl font-semibold accent-text">Korea</div>
+          <div class="text-xs text-gray-500 mt-1">Growing Demand</div>
+        </div>
+
+        <div class="card w-40 p-4 text-center">
+          <div class="text-xl font-semibold accent-text">ASEAN</div>
+          <div class="text-xs text-gray-500 mt-1">Expanding Reach</div>
+        </div>
+
+        <div class="card w-40 p-4 text-center">
+          <div class="text-xl font-semibold accent-text">Hong Kong</div>
+          <div class="text-xs text-gray-500 mt-1">Global Hub</div>
+        </div>
+
+        <div class="card w-40 p-4 text-center">
+          <div class="text-xl font-semibold accent-text">Ghana</div>
+          <div class="text-xs text-gray-500 mt-1">Africa Distribution</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center">
+      <h3 class="text-2xl font-serif mb-4">Let’s Work Together</h3>
+      <p class="text-gray-600 max-w-md mx-auto mb-8">
+        Partner with us to bring premium beverages to markets across Asia and Africa.
+      </p>
+      <a href="index.html#for-producers" class="btn btn-purple">Become a Partner</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="united-spirits-site/assets/img/logo2.jpg" alt="United Spirits Logo" class="h-10 w-auto" />
+          <span class="font-serif text-xl">United <span class="accent-text">Spirits</span></span>
+        </a>
+        <p class="text-gray-400 mb-6">
+          Premium wines, whiskeys, and brandies curated for discerning palates. We partner with elite producers to bring you the finest spirits from around the world.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://x.com/unitedspiritshk" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke="currentColor" fill="none" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2.5 17a24 24 0 0 1 0-10 2 2 0 0 1 1.4-1.4 50 50 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24 24 0 0 1 0 10 2 2 0 0 1-1.4 1.4 50 50 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61579254602509" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/united_spiritshk/" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8z"/><circle cx="17.5" cy="6.5" r=".5"/></svg>
+          </a>
+          <a href="https://wa.me/85269346630" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8 8h-.5a8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7A8.38 8.38 0 0 1 4 11.5a8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9A8.48 8.48 0 0 1 21 11.5z"/><polyline points="15.5 9 9.5 15 6.5 12"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@unitedspiritshk" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0-4 4h4"/><path d="M15 16a4 4 0 1 0-4-4v4"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="index.html" class="text-gray-400 hover:text-pink-400">Home</a></li>
+          <li><a href="index.html#collections" class="text-gray-400 hover:text-pink-400">Collections</a></li>
+          <li><a href="index.html#featured" class="text-gray-400 hover:text-pink-400">Featured</a></li>
+          <li><a href="news.html" class="text-gray-400 hover:text-pink-400">News</a></li>
+          <li><a href="index.html#contact" class="text-gray-400 hover:text-pink-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+        <p class="text-gray-400">Room 1002, 10/F, Easey Commercial Building, 253-261 Hennessy Road, Wanchai, Hong Kong</p>
+        <p class="text-gray-400 mt-2">Phone: <a href="tel:+85269346630" class="hover:text-pink-400">+852 6934 6630</a></p>
+        <p class="text-gray-400 mt-2">Email: <a href="mailto:info@unitedspiritshk.com" class="hover:text-pink-400">info@unitedspiritshk.com</a></p>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center text-gray-500 text-sm">
+      &copy; 2025 United Spirits. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <!-- Map Script -->
+  <script>
+    window.addEventListener('load', function() {
+
+      const locations = [
+        { name: "Hong Kong (Global Hub)", position: [22.281556, 114.1793047] },
+        { name: "China (Core Market)", position: [36.067108, 120.382609] },
+        { name: "Japan (Premium Focus)", position: [36.2048, 138.2529] },
+        { name: "Korea (Growing Demand)", position: [35.9078, 127.7669] },
+        { name: "ASEAN (Expanding Reach)", position: [10.8000, 106.7000] },
+        { name: "Ghana (Africa Distribution)", position: [7.9465, -1.0254] }
+      ];
+
+      const map = L.map('global-footprint-map', {
+        center: [10, 100],
+        zoom: 3,
+        scrollWheelZoom: false
+      });
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 18
+      }).addTo(map);
+
+      locations.forEach(location => {
+        const marker = L.circleMarker(location.position, {
+          radius: 10,
+          fillColor: "#ec4899",
+          fillOpacity: 1,
+          stroke: true,
+          color: '#ffffff',
+          weight: 2
+        }).addTo(map);
+
+        marker.bindPopup(`<div class="font-semibold">${location.name}</div>`);
+      });
+
+    });
+  </script>
+
+</body>
+</html>
