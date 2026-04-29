@@ -12,12 +12,11 @@ const contactInfo = [
 ];
 
 const socials = [
-  { label: "WhatsApp", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "X", href: "#" },
-  { label: "Facebook", href: "#" },
-  { label: "TikTok", href: "#" },
+  { label: "WhatsApp", href: "https://wa.me/85269346630" },
+  { label: "Instagram", href: "https://www.instagram.com/united_spiritshk/" },
+  { label: "X", href: "https://x.com/unitedspiritshk" },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61579254602509" },
+  { label: "TikTok", href: "https://www.tiktok.com/@unitedspiritshk" },
 ];
 
 export default function Contact() {
@@ -25,15 +24,24 @@ export default function Contact() {
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
-    // Simulate send
-    setTimeout(() => {
-      setSending(false);
+
+    try {
+      await fetch("https://formspree.io/f/mkgqadqr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(form),
+      });
       setSent(true);
       setForm({ name: "", email: "", company: "", message: "" });
-    }, 1200);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -172,6 +180,8 @@ export default function Contact() {
                   <a
                     key={s.label}
                     href={s.href}
+                    target="_blank"
+                    rel="noreferrer"
                     className="px-4 py-2 rounded-full border border-border/80 text-xs font-body font-medium text-muted-foreground hover:border-gold hover:text-gold transition-all duration-300"
                   >
                     {s.label}
